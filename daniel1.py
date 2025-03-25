@@ -110,12 +110,18 @@ def q12():
 #    imprima o novo saldo, considerando um reajuste de 2%.
 def q13():
     saldo = float(input('Digite o saldo da conta: '))
-    aumento = float(input('Digite a porcentagem de aumento: '))
-    Saldo = Saldo + saldonovo
-    print(saldo)
-q13()
+    Nsaldo = saldo * 0.02
+    print(saldo+Nsaldo)
+    
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
+def q14():
+    base = float(input('Digite a base do retangulo: '))
+    altura = float(input('Digite a altura do retangulo: '))
+    perimetro = 2* (base + altura)
+    area = base * altura
+    print(f'O perímetro do retângulo é: {perimetro:.2f}')
+    print(f'A área do retângulo é: {area:.2f}')
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
