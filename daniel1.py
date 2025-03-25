@@ -40,48 +40,80 @@ def q06():
     
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
-def 07():
+def q07():
     nome = input('nome: ')
     endereco = input('endereço: ')
     telefone = input('Telefone: ')
-    texto = f '''
+    texto = f'''
     Nome: {nome}
     Endereço: {endereço}
     Telefone: {telefone}
     '''
     print(texto)
-q07()
+
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
-def 08():
+def q08():
     num1 = int(input('num1:'))
     num2 = int(input('num2:'))
     print(f'{num1}-{num2} = {num1-num2}')
 
- q08():
+ 
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
-def 09():
-    numReal = real(input(' real: '))
-    print(numero / 4)
+def q09():
+    num = float(input(' real: '))
+    print(num / 4)
+
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q10():
+    num1 = float(input('num1: '))
+    num2 = float(input('num2: '))
+    num3 = float(input('num3: '))
+    media = (num1+num2+num3) / 3
+    print(media)
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def q11():
+    num1 = float(input('num1: '))
+    num2 = float(input('num2: '))
+    ad  = (num1 + num2)
+    sub = (num1 - num2)
+    mult  = (num1 * num2)
+    div  = (num1 / num2)
+    texto = f'''
+    adição:{ad}
+    subtração:{sub}
+    multiplicação:{mult}
+    divisão:{div}
+    '''
+    print(texto)
+
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q12():
+    num = float(input('num: ')) 
+    num = num * num
+    print(num) 
+
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
-
+def q13():
+    saldo = float(input('Digite o saldo da conta: '))
+    aumento = float(input('Digite a porcentagem de aumento: '))
+    Saldo = Saldo + saldonovo
+    print(saldo)
+q13()
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
 
