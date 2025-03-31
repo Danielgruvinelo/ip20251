@@ -109,12 +109,11 @@ def q12():
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
 def q13():
-    saldo = float(input('Digite o saldo da conta: '))
-    Nsaldo = saldo * 0.02
-    print(saldo+Nsaldo)
-    
+    Saldo = float(input('Saldo: R$ '))
+    print(f'Saldo com ajuste de 2%: R$ {Saldo * 1.02} ')
+
 #14. Faça um programa que leia a base e a altura de um retângulo
-#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
+#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).  
 def q14():
     base = float(input('Digite a base do retangulo: '))
     altura = float(input('Digite a altura do retangulo: '))
@@ -122,10 +121,22 @@ def q14():
     area = base * altura
     print(f'O perímetro do retângulo é: {perimetro:.2f}')
     print(f'A área do retângulo é: {area:.2f}')
+   
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
+def q15():
+    valor_produto = float(input('Valor do Produto: R$ '))
+    percentual_desconto = float(input('Percentual do Desconto: '))
+    valor_desconto = valor_produto * percentual_desconto/100
+    valor_produto_desconto = valor_produto - valor_desconto
+    resultado = f'''
+    Valor do Produto: R$ {valor_produto}
+    Valor do Desconto({percentual_desconto}%): R$ {valor_desconto}
+    Valor final do Produto: R$ {valor_produto_desconto}
+    '''
+    print(resultado)
 
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
