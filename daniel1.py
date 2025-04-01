@@ -148,6 +148,12 @@ def q15():
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+def q17():
+    C = float(input("Digite a temperatura em graus Celsius: "))
+    F = (9 * C + 160) / 5
+    print(F)
+    
+
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -161,6 +167,15 @@ def q15():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def q18():
+    T = float(input("Digite de viagem (em horas): "))
+    V = float(input("Digite a velocidade em média (em km/hora): "))
+    D = T * V
+    L = distancia / 12
+    print(f'distância percorrida: {distancia:.2f} km')
+    print(f'litros de combustível consumido: {litros:.2f} litros')
+
+
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -172,3 +187,5 @@ def q15():
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
+
+
