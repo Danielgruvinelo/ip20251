@@ -89,19 +89,45 @@ def q10():
     if (b < a < c):
         print(f' {b} {a} {c}')
     if (b < c < a):
-        print(f' {b} {a} {c}')
+        print(f' {b} {c} {a}')
     if (c < a < b):
-        print(f' {b} {a} {c}')
+        print(f' {c} {a} {b}')
     if (c < b < a):
-        print(f' {b} {a} {c}')
+        print(f' {c} {b} {a}')
 
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    a = int(input('Digite o primeiro número: '))
+    b = int(input('Digite o segundo número: '))
+    c = int(input('Digite o terceiro número: '))
+    maior = (a)
+    if b > maior:
+        maior = b
+    if c > maior:
+        maior = c
+
+    print(f'O maior número é: {maior}')
+
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
 #• Se é menor de idade
 #• Se é maior de 65 anos
+def q12():
+    idade = int(input('Digite a sua idade: '))
+    
+    if idade >= 18 and idade <= 65:
+        print('Você é maior de idade: ')
+
+    elif idade > 65:
+         print('Você é maior de 65 anos: ')
+
+    else:
+        print('Você é menor de idade: ')
+
+    
+
 
 #13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota
 #da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1,
@@ -147,6 +173,10 @@ def q10():
 #18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
 #aparecer uma mensagem informando que não existe mês com este número.
+def q18():
+    mes = int(input('Número do Mês: '))
+
+
 
 #19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
 #para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o
