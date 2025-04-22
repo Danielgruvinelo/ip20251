@@ -39,11 +39,33 @@ def q1():
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
+def q2():
+    num1 = int(input('Digite o primeiro número: '))
+    num2 = int(input('Digite o segundo número: '))
+    soma = num1 + num2
+    if soma > 20:
+        soma += 8
+    else:
+        soma -= 5
+
+    print(' O resultado final é:', soma)
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
+def  q3():
+    num = int(input(' Digite um número inteiro: '))
+    if num % 3 == 0:
+       print('É múltiplo de 3: ')
+
+    else:
+        print(' Não é múltiplo de 3: ')
+
+
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
+def q4():
+    num = int(input(' Digite um número inteiro: '))
+    if num % 5 == 
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 def q5():
