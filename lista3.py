@@ -58,15 +58,33 @@ def q5():
 #• 1 + 2 = 3, quarto termo, etc.
 # 1 1 2 3 5 8 13 21
 def q6():
-    Fibonacci = [1,1]
+    ant = 1
+    atu = 1
+    print(ant, end=' ' )
+    print(atu, end=' ' )
     for _ in range(18):
-    Fibonacci soma(Fibonacci[+1] + Fibonacci[+2])
-    print('Fibonacci') ta tudo errado
+        pro = ant + atu        
+        print(pro, end=' ')
+        ant = atu
+        atu = pro
 
-:#7. Crie um programa que permita entrar com o nome, a nota da
+#7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
+def q7():
+    resultado = ' '
+    media_geral = 0
+    for _ in range(3):
+        nome = input(' Nome: ')
+        n1 = float(input(' Nota1: '))
+        n2 = float(input(' Nota2: '))
+        media = round((n1+n2)/2,1)
+        media_geral+= media
+        resultado += f'{nome}\t{n1}\t{n2}\t{media}\n'
+    print(' Nome\tN1\tN2\tMedia')
+    print(resultado)
+    print(f'Media da Turma: {round(media_geral/3,1)} ')
 
 #8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -75,6 +93,17 @@ def q6():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+def q8():
+    resultado = ' '
+    for _ in range(3):
+        nome = input('Nome: ')
+        salario = float(input('salário: R$ '))
+        irpf = salario * (0 if salario < 1300 else 0.10 if salario < 2300 else 0.15)
+        resultado += f'{nome}\t{salario}\t{round(irpf, 2)}\n'
+    print('Nome\tsalario(R$)\tirpf(R$)')
+    print(resultado)
+        
+
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
