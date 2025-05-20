@@ -115,6 +115,7 @@ def q8():
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
 
+
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
 #jogadores, crie um programa que apresente as seguintes informações:
@@ -127,11 +128,30 @@ def q8():
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
+def q11():
+    num = -1
+    contador = 0
+    while num != 0:
+        num = int(input(' Digite um número: '))
+        if num >= 100 and num <= 200:
+            contador += 1
+    print(f' Quantidade de valores entre 100 e 200: {contador}')
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
+def q12():
+    populacaoA = 5_000_000
+    populacaoB = 7_000_000
+    anos = 0
+    while populacaoA  <  populacaoB:   
+        anos+=1
+        populacaoA += populacaoA*0.03
+        populacaoB += populacaoB*0.02
+    print(f' Após {anos} anos: ')
+    print(f' Populacao A = {populacaoA}')
+    print(f' Populacao B = {populacaoB}')
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
 #de consumo. Para cada consumidor, são digitados os seguintes dados:
