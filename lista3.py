@@ -1,3 +1,4 @@
+from biblioteca import*
 '''
 Lista de Exercícios referentes a estruturas de iteração (repetição)
 '''
@@ -19,9 +20,9 @@ def exemploEnquanto():
             print(x)
         else:
                 print('Fim!')#nunca é executado, já que x nunca é >= 10
-#1.Faça um programa que imprima todos os números de 1 até 100.
+#1.Faça um programa que imprima todos os números de 1 até 200.
 def q1():
-    for x in range(1,101): #vai de 1 a 101
+    for x in range(1,201): #vai de 1 a 201
         print(x,end=' ')
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 def q2():
@@ -33,7 +34,7 @@ def q3():
         print(x, end=' ')
 #4. Faça um programa que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
-#e tiver mais de 21 anos.
+#e tiver mais de 21 anos e se for feminino .
 def q4():
     for x in range(3):
         nome = input('Nome: ')
@@ -116,6 +117,7 @@ def q8():
 #analisados.
 
 
+
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
 #jogadores, crie um programa que apresente as seguintes informações:
@@ -146,7 +148,7 @@ def q12():
     populacaoB = 7_000_000
     anos = 0
     while populacaoA  <  populacaoB:   
-        anos+=1
+        anos+=
         populacaoA += populacaoA*0.03
         populacaoB += populacaoB*0.02
     print(f' Após {anos} anos: ')
@@ -166,14 +168,59 @@ def q12():
 #• O custo total para cada consumidor
 #• O total de consumo para os três tipos de consumidor
 #• A média de consumo dos tipos 1 e 2
+def q13():
+    numero = -1
+    consumo_geral = 0
+    consumo_tipo = 0
+    qtde_tipo_1_2 = 0
+    while numero != 0:
+        custo = 0
+        numero = input_int('Número do Consumo: ',0,9_999_999)
+        if numero == 0:
+            break
+        qtd_kw = input_int('Qtde de Kwh:',9_9999_999)
+        tipo = input_int('Tipo do Consumidor:',1,3)
+        custo += qtd_Kw * 0.3 if tipo == 1 else 0;
+        custo += qtd_Kw * 0.5 if tipo == 2 else 0;
+        custo += qtd_Kw * 0.7 if tipo == 3 else 0;
+        consumo_tip_1_2 += qtd_kw if tipo == 1 else 0;
+        consumo_tip_1_2 += qtd_kw if tipo == 2 else 0;
+        qtde_tipo_1_2 += 1 if tipo == 1 else 0;
+        qtde_tipo_1_2 += 1 if tipo == 2 else 0;
+        print(f'Custo total do consumidor: R$ {custo}')
+    print(f'Consumo Geral: {consumo_geral} Kw')
+    print(f'Média de consumo tipo 1 e 2: {consumo_tipo_1 e 2/qtde_tipo_1_2} Kwh')
+
 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
-#número. O algoritmo encerra quando se digita um número menor do que 1.n
+#número. O algoritmo encerra quando se digita um número menor do que 1.
 
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
 #imprima:
 #• total de pessoas com menos de 21 anos
 #• total de pessoas com mais de 50 anos
+def 15():
+    menos_de_21 = 0
+    mais_de_50 = 0
+    while true:
+        try:
+            idade = int(input('Digite a idade(ou 0 para sair): '))
+            if idade == 0:
+                break
+                if idade < 21:
+                    menos_de_21 += 1
+                if idade > 50:
+                    mais_de_50 += 1
+    expect ValueError:
+            print('Entrada inválida! Por favor, digite um número válido.')
+    print('\nResultados: ')
+    print(f' Total de pessoas com menos de 21 anos: {menos_de_21}')
+    print(f' Total de pessoas com mais de 50 anos: {mais_de_50}')
+if __name__ == "__main__":
+    main()
+
+
+
 
 #16. Sabendo-se que a unidade lógica e aritmética calcula a divisão por meio de subtrações
 #sucessivas, criar um algoritmo que calcule e imprima o resto da divisão de
@@ -233,7 +280,6 @@ def q12():
 #• o número de pessoas moradoras do Rio de Janeiro, torcedores de outros
 #clubes;
 #• o número de pessoas de Niterói torcedoras do Fluminense
-#3.12. Exercícios da Aula 73
 #Obs.: O programa encerra quando se digita 0 para o time.
 
 #21. Em uma universidade cada aluno possui os seguintes dados:
