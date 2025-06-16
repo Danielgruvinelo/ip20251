@@ -1,4 +1,5 @@
 import random
+from biblioteca import input_int
 '''
 Lista de Exercícios referentes a coleções e arquivos em python
 '''
