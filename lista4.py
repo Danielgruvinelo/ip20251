@@ -7,9 +7,29 @@ Lista de Exercícios referentes a coleções e arquivos em python
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
+def q1():
+    lista = []
+    for _ in range(15):
+        lista.append(random.randrange(100))
+    print(lista, end=' ')
+    numero = int(input('Digite um número a ser buscado: '))
+    try:
+        posicao = lista.index(numero)
+    except ValueError:
+        print(f'{numero} não localizado na lista')
+    else:
+        print(f'Localizado na posição: {posicao}')
 
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
+def q2():
+    letras = []
+    for _ in range(10):
+        letras.append(chr(random.randrange(65,91)))
+    cont = 1
+    for c in letras:
+        print(f'{cont}: {c}')
+        cont += 1
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
