@@ -22,7 +22,7 @@ def q1():
         print(f'Localizado na posição: {posicao}')
 
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
-#numerada.
+#numerada. (ASCII 65 - 90)
 def q2():
     letras = []
     for _ in range(10):
@@ -38,13 +38,16 @@ def q2():
 def q21():
     qtde = input_int('Qtde de caracteres para a senha: ',8,20)
     senha = ''
+    for _ in range(qtde):
+        senha+=chr(random.randrange(40,127))
+    print(f'Senha sugerida: {senha}')
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 def q3():
     numeros = [10,18,22,42,45,50,52,55,58,60,62,65,68,70,78]
     for i, numero in enumerate(numeros, start=1):
-        if numero % 2== 0:
+        if numero % 2 == 0:
             print(f'{i}. {numero} - Par')
         else:
             print(f'{i}. {numero} - Impar')
