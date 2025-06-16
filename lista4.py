@@ -31,8 +31,22 @@ def q2():
         print(f'{cont}: {c}')
         cont += 1
 
+#2.1 Faça um programa que peça ao usuário para informar a qtde de caracteres
+# para a geração de uma senha aleatória. Ao final o programa deve exibir a
+# senha sugerida. (ASCII 40-126)
+def q21():
+    qtde = input_int('Qtde de caracteres para a senha: ',8,20)
+    senha = ''
+
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
+def q3():
+    numeros = [10,18,22,42,45,50,52,55,58,60,62,65,68,70,78]
+    for i, numero in enumerate(numeros, start=1):
+        if numero % 2== 0:
+            print(f'{i}. {numero} - Par')
+        else:
+            print(f'{i}. {numero} - Impar')
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
