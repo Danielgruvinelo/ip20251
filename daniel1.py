@@ -7,7 +7,7 @@ Exercícios sobre os comandos básicos em Python
 def q01():
     print('João Paulo')
 
-
+q01
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
 
 def q02():
@@ -189,3 +189,5 @@ def q18():
 #    necessário também ler o valor da cotação do dólar.
 
 
+questao = input('Digite a questão a ser executada: ')
+eval(f'q{questao}()') # eval transforma uma string (texto) em comando python
